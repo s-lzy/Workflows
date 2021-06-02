@@ -54,7 +54,6 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <StateMachine InitialState="{x:Reference __ReferenceID3}" DisplayName="StateMachine" sap:VirtualizedContainerService.HintSize="730,676.666666666667" sap2010:WorkflowViewState.IdRef="StateMachine_1">
@@ -91,9 +90,7 @@
               <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Transition.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dateOfBirth&gt;0 and dateOfBirth&lt;32 and retryCount&lt;3" />
-          </Transition.Condition>
+          <Transition.Condition>[dateOfBirth&gt;0 and dateOfBirth&lt;32 and retryCount&lt;3]</Transition.Condition>
           <Transition.To>
             <State x:Name="__ReferenceID2" DisplayName="State - Month" sap:VirtualizedContainerService.HintSize="134,61.3333333333333" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
@@ -205,7 +202,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <Transition.To>
-                                    <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61.3333333333333" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
+                                    <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="422.666666666667,400.666666666667" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
                                       <State.Entry>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,285.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
                                           <sap:WorkflowViewStateService.ViewState>
